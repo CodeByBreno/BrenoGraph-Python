@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #my-svg {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <svg id="my-svg">
+    <rect width="200" height="200" fill="blue" />
+  </svg>
+
+  <div id="message" style="display: none;">Mensagem de exemplo</div>
+
+  <script>
+    var svgElement = document.getElementById('my-svg');
+    var messageElement = document.getElementById('message');
+
+    svgElement.addEventListener('mouseover', function() {
+      messageElement.style.display = 'block';
+    });
+
+    svgElement.addEventListener('mouseout', function() {
+      messageElement.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
