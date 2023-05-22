@@ -55,3 +55,14 @@ mais baixo do que o esperado.
 Além disso, foi necessário criar um ponto extra em ambos os gráficos das populações,
 (0,1), para que ele fosse gerado de maneira adequada. Não tenho certeza do porque isso
 ocorreu, mas acredito que o projeto já realiza o solicitado
+
+
+================================
+Bugs Conhecidos
+================================
+
+- Um gráfico apenas no primeiro quadrante não é renderizado adequadamente
+- Gráficos com dados muito grandes ficam desproporcionais (as aproximações para inteiros estão gerando 0. É preciso redimensionar de alguma maneira)
+- O design não está ideal: os textos tem tamanho fixo, fonte não tão boa, o posicionamento nem sempre funciona bem
+- e alguns outros. É um trabalho em progresso, retomarei no futuro
+
